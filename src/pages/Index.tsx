@@ -3,58 +3,53 @@ import { useEffect } from "react";
 const Index = () => {
   const phases = [
     {
-      title: "Analytics",
-      description: "Data analysis and user behavior insights to understand hydration patterns among runners.",
-      flipbookLink: "https://online.flippingbook.com/view/444041480/",
-      flipbookId: "88fbd29cfe"
+      title: "User Interviews",
+      description: "Insights collected from 7 runners about their hydration habits and pain points.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
     },
     {
-      title: "Persona",
-      description: "Creating detailed user personas based on research to represent target runner demographics.",
-      flipbookLink: "https://online.flippingbook.com/view/444041481/",
-      flipbookId: "88fbd29cff"
+      title: "Analytics",
+      description: "Data & research validation — e.g. 2% dehydration impact on performance.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
+    },
+    {
+      title: "Insights",
+      description: "Patterns from interviews and analytics combined to identify key themes.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
+    },
+    {
+      title: "Persona (Pierre)",
+      description: "Fictional user profile based on shared behaviors and needs from research.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
     },
     {
       title: "User Journey",
-      description: "Mapping the complete experience of runners from pre-run preparation to post-run recovery.",
-      flipbookLink: "https://online.flippingbook.com/view/444041482/",
-      flipbookId: "88fbd29cfg"
+      description: "Pierre's race experience, emotions, and actions throughout his hydration journey.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
     },
     {
       title: "Problem Statement",
-      description: "Defining the core challenges runners face with hydration during training and events.",
-      flipbookLink: "https://online.flippingbook.com/view/444041483/",
-      flipbookId: "88fbd29cfh"
+      description: "Defining Pierre's main hydration challenge during training and events.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
     },
     {
-      title: "Ideation",
-      description: "Brainstorming and exploring innovative solutions for improving hydration experiences.",
-      flipbookLink: "https://online.flippingbook.com/view/444041484/",
-      flipbookId: "88fbd29cfi"
+      title: "Ideation & Prototyping",
+      description: "Creative session and storyboard sketches exploring innovative hydration solutions.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX"
     },
     {
-      title: "Prototyping",
-      description: "Building low and high-fidelity prototypes to test design concepts with real users.",
-      flipbookLink: "https://online.flippingbook.com/view/444041485/",
-      flipbookId: "88fbd29cfj"
-    },
-    {
-      title: "User Testing",
-      description: "Conducting usability tests to validate design decisions and gather feedback.",
-      flipbookLink: "https://online.flippingbook.com/view/444041486/",
-      flipbookId: "88fbd29cfk"
-    },
-    {
-      title: "Iteration",
-      description: "Refining the design based on user feedback and testing insights.",
-      flipbookLink: "https://online.flippingbook.com/view/444041487/",
-      flipbookId: "88fbd29cfl"
-    },
-    {
-      title: "Final Design",
-      description: "The complete design solution with all refinements and final deliverables.",
-      flipbookLink: "https://online.flippingbook.com/view/444041488/",
-      flipbookId: "88fbd29cfm"
+      title: "Final Product",
+      description: "Hydration Band — Sweat-reactive wristband prototype that visualizes hydration state through layered color change.",
+      flipbookLink: "https://online.flippingbook.com/view/XXXXXXXXX/",
+      flipbookId: "XXXXXXXX",
+      isFinal: true
     }
   ];
 
@@ -107,7 +102,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-            {phases.map((phase, index) => (
+            {phases.slice(0, 7).map((phase, index) => (
               <div
                 key={index}
                 className="animate-fade-in"
@@ -141,6 +136,38 @@ const Index = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Final Product - Highlighted Section */}
+          <div className="mt-16 animate-fade-in" style={{ animationDelay: '0.7s' }}>
+            <div className="max-w-5xl mx-auto">
+              <div className="border-2 border-accent rounded-xl p-8 md:p-12 bg-accent/5">
+                <div className="mb-8">
+                  <div className="flex items-center gap-4 mb-4">
+                    <span className="text-5xl font-bold text-accent">08</span>
+                    <h3 className="text-3xl md:text-4xl font-bold">{phases[7].title}</h3>
+                  </div>
+                  <p className="text-base md:text-lg text-foreground/90 leading-relaxed max-w-3xl">
+                    {phases[7].description}
+                  </p>
+                </div>
+                <div className="flex justify-center">
+                  <a
+                    href={phases[7].flipbookLink}
+                    className="fbo-embed rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-shadow"
+                    data-fbo-id={phases[7].flipbookId}
+                    data-fbo-ratio="3:2"
+                    data-fbo-lightbox="yes"
+                    data-fbo-width="100%"
+                    data-fbo-height="auto"
+                    data-fbo-version="1"
+                    style={{ maxWidth: '100%' }}
+                  >
+                    {phases[7].title}
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </main>
