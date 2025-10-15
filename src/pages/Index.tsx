@@ -1,53 +1,75 @@
-import { FlipBook } from "@/components/FlipBook";
+import { useEffect } from "react";
 
 const Index = () => {
   const phases = [
     {
       title: "Analytics",
       description: "Data analysis and user behavior insights to understand hydration patterns among runners.",
-      pdfPath: "/pdfs/phase1.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041480/",
+      flipbookId: "88fbd29cfe"
     },
     {
       title: "Persona",
       description: "Creating detailed user personas based on research to represent target runner demographics.",
-      pdfPath: "/pdfs/phase2.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041481/",
+      flipbookId: "88fbd29cff"
     },
     {
       title: "User Journey",
       description: "Mapping the complete experience of runners from pre-run preparation to post-run recovery.",
-      pdfPath: "/pdfs/phase3.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041482/",
+      flipbookId: "88fbd29cfg"
     },
     {
       title: "Problem Statement",
       description: "Defining the core challenges runners face with hydration during training and events.",
-      pdfPath: "/pdfs/phase4.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041483/",
+      flipbookId: "88fbd29cfh"
     },
     {
       title: "Ideation",
       description: "Brainstorming and exploring innovative solutions for improving hydration experiences.",
-      pdfPath: "/pdfs/phase5.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041484/",
+      flipbookId: "88fbd29cfi"
     },
     {
       title: "Prototyping",
       description: "Building low and high-fidelity prototypes to test design concepts with real users.",
-      pdfPath: "/pdfs/phase6.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041485/",
+      flipbookId: "88fbd29cfj"
     },
     {
       title: "User Testing",
       description: "Conducting usability tests to validate design decisions and gather feedback.",
-      pdfPath: "/pdfs/phase7.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041486/",
+      flipbookId: "88fbd29cfk"
     },
     {
       title: "Iteration",
       description: "Refining the design based on user feedback and testing insights.",
-      pdfPath: "/pdfs/phase8.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041487/",
+      flipbookId: "88fbd29cfl"
     },
     {
       title: "Final Design",
       description: "The complete design solution with all refinements and final deliverables.",
-      pdfPath: "/pdfs/phase9.pdf"
+      flipbookLink: "https://online.flippingbook.com/view/444041488/",
+      flipbookId: "88fbd29cfm"
     }
   ];
+
+  useEffect(() => {
+    // Load FlippingBook embed script
+    const script = document.createElement('script');
+    script.src = 'https://online.flippingbook.com/EmbedScriptUrl.aspx?m=redir&hid=444041480';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
@@ -102,7 +124,21 @@ const Index = () => {
                     {phase.description}
                   </p>
                 </div>
-                <FlipBook pdfPath={phase.pdfPath} title={phase.title} />
+                <div className="flex justify-center">
+                  <a
+                    href={phase.flipbookLink}
+                    className="fbo-embed rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                    data-fbo-id={phase.flipbookId}
+                    data-fbo-ratio="3:2"
+                    data-fbo-lightbox="yes"
+                    data-fbo-width="100%"
+                    data-fbo-height="auto"
+                    data-fbo-version="1"
+                    style={{ maxWidth: '100%' }}
+                  >
+                    {phase.title}
+                  </a>
+                </div>
               </div>
             ))}
           </div>
