@@ -3,6 +3,7 @@ import { useSearchParams } from "react-router-dom";
 import DeliverableCard from "@/components/flipbook/DeliverableCard";
 import DeliverableViewer from "@/components/flipbook/DeliverableViewer";
 import { DELIVERABLES } from "@/lib/flipbook";
+import { assetUrl } from "@/lib/utils";
 
 const Index = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -51,7 +52,7 @@ const Index = () => {
               <div className="mx-auto mb-6 h-1 w-20 bg-accent" />
             </div>
             <img
-              src="/img/logoMarkBlack.png"
+              src={assetUrl("/img/logoMarkBlack.png")}
               alt="Mars signature"
               className="mx-auto mb-4 h-40 w-50"
             />

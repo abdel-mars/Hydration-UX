@@ -1,5 +1,6 @@
 import deliverablesJson from "@/data/deliverables.json";
 import manifestJson from "@/data/flipbook-manifest.json";
+import { assetUrl } from "@/lib/utils";
 
 export interface Deliverable {
   order: number;
@@ -25,10 +26,10 @@ export const FLIPBOOK_MANIFEST = manifestJson as unknown as Record<string, Flipb
 const pad = (page: number) => String(page).padStart(2, "0");
 
 export const pageUrl = (slug: string, page: number) =>
-  `/flipbook/${slug}/page-${pad(page)}.jpg`;
+  assetUrl(`/flipbook/${slug}/page-${pad(page)}.jpg`);
 
 export const thumbUrl = (slug: string, page: number) =>
-  `/flipbook/${slug}/thumb-${pad(page)}.jpg`;
+  assetUrl(`/flipbook/${slug}/thumb-${pad(page)}.jpg`);
 
 export const getDeliverable = (slug: string | null | undefined) =>
   DELIVERABLES.find((deliverable) => deliverable.slug === slug);

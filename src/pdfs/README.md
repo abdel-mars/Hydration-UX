@@ -1,7 +1,7 @@
 # Source documents
 
 The eight original deliverables of the **Athlete Keep Hydrated** project. Read them on
-the [project site](https://athlete-keep-hydrated.page.gd/), which renders each one as a
+the [project site](https://abdel-mars.github.io/Hydration-UX/), which renders each one as a
 flipbook.
 
 - [Medium case study](https://medium.com/@elmahmoudimars/athlete-keep-hydrated-ux-piscine-project-at-zone01-1459077457c9)
