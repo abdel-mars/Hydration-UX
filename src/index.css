@@ -112,3 +112,28 @@ All colors MUST be HSL.
     @apply font-heading;
   }
 }
+
+/*
+ * Last card of the deliverables grid, centred when it is the only one in its
+ * row. Written by hand rather than with Tailwind utilities on purpose: `col-auto`
+ * and `col-start-auto` are both emitted before `col-start-2`, so a utility pair
+ * like `lg:col-start-2 xl:col-auto` would not reset anything. At 4 columns the
+ * seven cards fill 4 + 3, so there is no orphan and no rule applies.
+ */
+.grid-orphan {
+  grid-column: auto;
+}
+
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .grid-orphan {
+    grid-column: 1 / -1;
+    margin-inline: auto;
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  .grid-orphan {
+    grid-column: 2 / span 1;
+  }
+}

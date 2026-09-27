@@ -88,7 +88,7 @@ const Index = () => {
                 onOpen={openDeliverable}
                 className={
                   index === gridItems.length - 1 && gridItems.length % 3 === 1
-                    ? "lg:col-start-2"
+                    ? "grid-orphan"
                     : undefined
                 }
               />

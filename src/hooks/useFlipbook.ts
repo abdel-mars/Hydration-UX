@@ -106,7 +106,7 @@ export const useFlipbook = ({
 
   const pageUrl = useCallback(
     (value: number | null | undefined) =>
-      value && value >= 1 && value <= pageCount ? buildPageUrl(slug, value) : null,
+      slug && value && value >= 1 && value <= pageCount ? buildPageUrl(slug, value) : null,
     [pageCount, slug],
   );
 
