@@ -1,0 +1,58 @@
+{
+  "user-interviews": {
+    "pageCount": 11,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 1856904
+  },
+  "analytics": {
+    "pageCount": 10,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 1523128
+  },
+  "persona": {
+    "pageCount": 4,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 760348
+  },
+  "user-journey": {
+    "pageCount": 3,
+    "aspect": 1.4177,
+    "pixelWidth": 1633,
+    "pixelHeight": 1152,
+    "bytes": 327946
+  },
+  "problem-statement": {
+    "pageCount": 3,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 506813
+  },
+  "ideation": {
+    "pageCount": 3,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 686826
+  },
+  "storyboard": {
+    "pageCount": 2,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 547556
+  },
+  "final-product": {
+    "pageCount": 4,
+    "aspect": 0.707,
+    "pixelWidth": 1654,
+    "pixelHeight": 2340,
+    "bytes": 926824
+  }
+}

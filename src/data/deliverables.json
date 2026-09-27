@@ -1,0 +1,59 @@
+[
+  {
+    "order": 1,
+    "slug": "user-interviews",
+    "title": "User Interviews",
+    "description": "Insights from 7 runners on hydration habits, struggles, and needs. Reveals key pain points that shaped the entire design process.",
+    "pdf": "Elmahmoudi_Abderrahman_User_Interviews_Insights_20251006_V1.pdf"
+  },
+  {
+    "order": 2,
+    "slug": "analytics",
+    "title": "Analytics",
+    "description": "Scientific data validating how dehydration impacts performance. Links research with real athlete experiences.",
+    "pdf": "Elmahmoudi_Abderrahman_Analytics_Hydration_20251009_V1.pdf"
+  },
+  {
+    "order": 3,
+    "slug": "persona",
+    "title": "Persona (Pierre)",
+    "description": "Meet Pierre — a 32-year-old runner who struggles to stay hydrated. Represents all user insights in one realistic profile.",
+    "pdf": "Elmahmoudi_Abderrahman_Pierre_Persona_20251009_V1.pdf"
+  },
+  {
+    "order": 4,
+    "slug": "user-journey",
+    "title": "User Journey",
+    "description": "Pierre's full race experience — before, during, and after running. Highlights his emotions, actions, and hydration pain points.",
+    "pdf": "Elmahmoudi_Abderrahman_User_Journey_Timeline_Pierre_20251010_V2.pdf"
+  },
+  {
+    "order": 5,
+    "slug": "problem-statement",
+    "title": "Problem Statement",
+    "description": "Defines the main challenge through one key question: 'How might we help Pierre stay hydrated using a simple, non-digital tool?'",
+    "pdf": "Elmahmoudi_Abderrahman_Problem_Statement_Hydration_20251011_V1.pdf"
+  },
+  {
+    "order": 6,
+    "slug": "ideation",
+    "title": "Ideation",
+    "description": "Brainstormed multiple ideas and chose The Hydration Band, a color-based, non-digital reminder for hydration timing.",
+    "pdf": "Elmahmoudi_Abderrahman_Ideation_HydrationBand_20251012_V1.pdf"
+  },
+  {
+    "order": 7,
+    "slug": "storyboard",
+    "title": "Storyboard (Prototyping)",
+    "description": "Six hand-drawn scenes showing Pierre using the Hydration Band before, during, and after the race.",
+    "pdf": "Elmahmoudi_Abderrahman_Storyboard_Template_HydrationBand_20251013_V1.pdf"
+  },
+  {
+    "order": 8,
+    "slug": "final-product",
+    "title": "Final Product (Sweat-Reactive Hydration Band)",
+    "description": "The final concept: a sweat-reactive wristband that changes color to remind athletes when to hydrate — simple, smart, human.",
+    "pdf": "Elmahmoudi_Abderrahman_Final_Product_Summary_HydrationBand_SweatReactive_20251015_V1.pdf",
+    "isFinal": true
+  }
+]
