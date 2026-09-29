@@ -4,7 +4,8 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // Served from a subpath on GitHub Pages (/<repo>/); local builds stay at "/".
+  // "/" everywhere, since Vercel serves from the domain root. BASE_PATH exists
+  // only for hosts that mount the site under a subpath.
   base: process.env.BASE_PATH ?? "/",
   server: {
     host: "::",

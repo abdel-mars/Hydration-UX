@@ -28,14 +28,14 @@ fluid and salt loss.
 
 | # | Phase | What came out of it |
 |---|-------|---------------------|
-| 01 | [User interviews](https://abdel-mars.github.io/Hydration-UX/?doc=user-interviews) | 7 runners, 8 insights on real habits and workarounds |
-| 02 | [Analytics](https://abdel-mars.github.io/Hydration-UX/?doc=analytics) | 6 findings from published research, with sources |
-| 03 | [Persona](https://abdel-mars.github.io/Hydration-UX/?doc=persona) | Pierre, 32, a runner who means to do the right thing |
-| 04 | [User journey](https://abdel-mars.github.io/Hydration-UX/?doc=user-journey) | Before, during and after a race, with the pain points mapped |
-| 05 | [Problem statement](https://abdel-mars.github.io/Hydration-UX/?doc=problem-statement) | One sentence and one question to guide the next phases |
-| 06 | [Ideation](https://abdel-mars.github.io/Hydration-UX/?doc=ideation) | 20-minute constraint-led brainstorm, three voters, one winner |
-| 07 | [Storyboard](https://abdel-mars.github.io/Hydration-UX/?doc=storyboard) | 6 hand-drawn scenes of the band in use |
-| 08 | [Final product](https://abdel-mars.github.io/Hydration-UX/?doc=final-product) | The sweat-reactive Hydration Band, specified |
+| 01 | [User interviews](https://hydration-ux.vercel.app/?doc=user-interviews) | 7 runners, 8 insights on real habits and workarounds |
+| 02 | [Analytics](https://hydration-ux.vercel.app/?doc=analytics) | 6 findings from published research, with sources |
+| 03 | [Persona](https://hydration-ux.vercel.app/?doc=persona) | Pierre, 32, a runner who means to do the right thing |
+| 04 | [User journey](https://hydration-ux.vercel.app/?doc=user-journey) | Before, during and after a race, with the pain points mapped |
+| 05 | [Problem statement](https://hydration-ux.vercel.app/?doc=problem-statement) | One sentence and one question to guide the next phases |
+| 06 | [Ideation](https://hydration-ux.vercel.app/?doc=ideation) | 20-minute constraint-led brainstorm, three voters, one winner |
+| 07 | [Storyboard](https://hydration-ux.vercel.app/?doc=storyboard) | 6 hand-drawn scenes of the band in use |
+| 08 | [Final product](https://hydration-ux.vercel.app/?doc=final-product) | The sweat-reactive Hydration Band, specified |
 
 ![A two-page spread in the flipbook viewer](docs/spread.jpg)
 
@@ -81,7 +81,7 @@ could actually be produced at scale.
 
 ## Read it online
 
-**[athlete-keep-hydrated.page.gd](https://abdel-mars.github.io/Hydration-UX/)** — all eight
+**[hydration-ux.vercel.app](https://hydration-ux.vercel.app/)** — all eight
 deliverables, each opening as a flipbook you can drag, swipe or step through.
 
 - [Medium case study](https://medium.com/@elmahmoudimars/athlete-keep-hydrated-ux-piscine-project-at-zone01-1459077457c9)
